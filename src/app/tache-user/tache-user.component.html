@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-dialog-content class="mat-typography">
+    <h3>LES DETAILS DE L'UTILISATEUR</h3>
+    <mat-tab-group animationDuration="2000ms">
+      <mat-tab label="ADDRESS"> CITY => {{ data.address.city }} <br> GEO => LAT => {{ data.address.geo.lat }} LNG => {{ data.address.geo.lng }} <br> STREET => {{ data.address.street }} <br> SUITE => {{ data.address.suite }} <br> ZIPCODE => {{ data.address.zipcode }} </mat-tab>
+      <mat-tab label="COMPANY">BS => {{ data.company.bs }} <br> CATCHPHRASE => {{ data.company.catchPhrase }} <br> NAME => {{ data.company.name }} </mat-tab>
+      <mat-tab label="TACHE">completed => {{ tache.completed }} <br> ID => {{ tache.id }} <br> title => {{ tache.title }} </mat-tab>
+    </mat-tab-group>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>
+      ANNULER
+    </button>
+  </mat-dialog-actions>
+</div>
